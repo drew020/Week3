@@ -59,21 +59,23 @@ form {
 body,
 nav,
 image,
-main {
+main{
     display:block;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
     /*Debug boarder*/
-    border: 1px solid white;
+    /border: 1px solid white;
 
 }
 section{
-    display: block;
-    margin: auto;
-    border: 1px solid white;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    /border: 1px solid white;
 
 }
-span {
+span,table {
     display: inline-flex;
-    flex: 1;
+    margin: 0 auto;
 }
+
