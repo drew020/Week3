@@ -63,19 +63,20 @@ main{
     display:block;
     text-align: center;
     margin: 0 auto;
-    /*Debug boarder*/
-    /border: 1px solid white;
-
 }
+
 section{
     display: inline-block;
     text-align: center;
     margin: 0 auto;
-    /border: 1px solid white;
-
 }
-span,table {
+span,table{
     display: inline-flex;
     margin: 0 auto;
+}
+
+.form{
+    border: 1px solid white;
+
 }
 
