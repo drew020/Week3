@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(16, 16, 16);
+    background-color: rgb(102, 72, 72);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -21,6 +21,7 @@ li {
     float: left;
     margin: auto;
     border-right: 1px solid #bbbbbba6;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 li:last-child {
@@ -36,11 +37,13 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #5f6f8b;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .active {
     background-color: #4a5f7a;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 p,
@@ -53,7 +56,7 @@ h6,
 a,
 label,
 form {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 body,
@@ -69,14 +72,20 @@ section{
     display: inline-block;
     text-align: center;
     margin: 0 auto;
+
 }
 span,table{
     display: inline-flex;
     margin: 0 auto;
 }
 
-.form{
-    border: 1px solid white;
+image{
+    border-radius: 16%;
+}
+
+form{
+    border: 1px solid rgb(99, 83, 83);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 
 }
 
