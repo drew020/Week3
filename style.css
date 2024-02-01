@@ -64,17 +64,17 @@ form {
 
 body,
 nav,
-image,
-main {
+image{
     display: block;
     text-align: center;
-    margin: 0 auto;
+    margin: auto;
 }
 
 section {
-    display: inline-block;
+    display: flexbox;
+    flex: auto;
     text-align: center;
-    margin: 0 auto;
+    margin: auto;
 
 }
 
@@ -104,5 +104,12 @@ label {
 
 input {
     display: block;
+    margin: 0 auto;
+}
+
+main {
+    display: flexbox;
+    width: 336px;
+    text-align: center;
     margin: 0 auto;
 }
