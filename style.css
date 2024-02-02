@@ -126,59 +126,6 @@ li a:hover:not(.active) {
 /* #endregion Index Style*/
 
 /* #region News Style*/
-/* #endregion News Style*/
-
-/* #region Gallery Style*/
-.g_img {
-    width: 100%;
-    height: max-content;
-}
-
-.g_img_text {
-    display: block;
-    text-align: center;
-    text-shadow: 1px 1px #000000;
-    ;
-    border: #4a5f7a;
-    position: relative;
-    transform: translate(0, -512%);
-}
-
-.header {
-    text-align: center;
-    padding: 32px;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-/* #endregion Gallery Style*/
-/* Create four equal columns that sits next to each other */
-.column {
-    flex: 100%;
-    max-width: 100%;
-    padding: 0 4px;
-}
-
-.column img {
-    vertical-align: middle;
-}
-
-
-
-/* Galery Style--------------------------------------------------*/
-/* Resume Style--------------------------------------------------*/
-/* Resume Style--------------------------------------------------*/
-/* Login Style-------------------------------------------------------- */
-/* Login Style-------------------------------------------------------- */
-/* Signup Style-------------------------------------------------------- */
-/* Signup Style-------------------------------------------------------- */
-
-
-
 .cell {
     display: block;
     height: auto;
@@ -209,3 +156,56 @@ li a:hover:not(.active) {
     color: black;
     background-color: #ffffff;
 }
+/* #endregion News Style*/
+
+/* #region Gallery Style*/
+.g_img {
+    width: 100%;
+    height: max-content;
+}
+
+.g_img_text {
+    display: inline-flexbox;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    border: #4a5f7a;
+    position: relative;
+    margin: 0 auto;
+    transform: translate(0, -64px);
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+}
+
+.column img {
+    vertical-align: middle;
+}
+
+/* #endregion Gallery Style*/
+
+/* #region Resume Style*/
+/* #endregion Resume Style*/
+
+/* #region Login Style*/
+/* #endregion Login Style*/
+
+/* #region Signup Style*/
+
+/* #endregion Signup Style*/
