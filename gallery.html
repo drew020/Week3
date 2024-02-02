@@ -1,115 +1,84 @@
 <!DOCTYPE html>
 <html>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-}
-
-.header {
-  text-align: center;
-  padding: 32px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-</style>
 <head>
   <title>Gallery</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!--Navigation-->
   <nav class="title">
     <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="login.html">Login</a></li>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="login.html">Login</a></li>
     </ul>
-</nav>
-<!-- Header -->
-<div class="header">
-  <h1>Responsive Image Grid</h1>
-  <p>Resize the browser window to see the responsive effect.</p>
-</div>
+  </nav>
+  <!-- Header -->
+  <div class="header">
+    <h1>Art Gallery</h1>
+    <p>Protfoilo peices, project snapshots, conept art, dev blog</p>
+  </div>
 
-<!-- Photo Grid -->
-<div class="row"> 
-  <div class="column">
-    <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+  <!-- Photo Grid -->
+  <div class="row">
+    <div class="column">
+      <img class="g_img"
+        src="https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/318901587_3304414656500432_7724321977780298305_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=3635dc&_nc_ohc=oSYpCzBl05MAX_U3VZG&_nc_ht=scontent-atl3-2.xx&oh=00_AfBkfcqcpMmcoOJFGibZs1b1zFuBDcuWLr-mewt-sH_vtA&oe=65C03612"
+        style="width:100%"><strong>
+        <p class="g_img_text">AI Generated Image</p>
+      </strong></img>
+      <img class="g_img"
+        src="https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/318741138_3304414646500433_2104945354359870987_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=3635dc&_nc_ohc=KtHzX1xOTTcAX8Z8w-_&_nc_ht=scontent-atl3-1.xx&oh=00_AfAMpxfm2Fbcks1wWf1W-fJDfRji7RsKExawDmQXs-DiRA&oe=65C20DAC"
+        style="width:100%"><strong>
+        <p class="g_img_text">AI Generated Image</p>
+      </strong></img>
+      <img class="g_img"
+        src="https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/318324744_3304414553167109_2144010033812190121_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=3635dc&_nc_ohc=APU75LOdpIEAX-TOCHP&_nc_ht=scontent-atl3-1.xx&oh=00_AfDcCedDv4kV7xxKInYpelT8gj5BNz05_BWn-3qLMA5XCg&oe=65C1410D"
+        style="width:100%"><strong>
+        <p class="g_img_text">AI Generated Image</p>
+      </strong></img>
+      <img class="g_img"
+        src="https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/318906347_3304414543167110_3313471694737483861_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=3635dc&_nc_ohc=0jSyQOThe8gAX9ZxYDG&_nc_oc=AQkfb7-EnFxTTSWRiW_pF1OcJFjlv52w8ES87JAVFc6Ax3f0JPcEtLBP_c5p2MsDJiPc75JV9HLU-46ot1yIErfW&_nc_ht=scontent-atl3-2.xx&oh=00_AfB3NzQ37o9B1k1jsyo4WCk6M5lAIlrdOm9_xRiKg_k-7g&oe=65C08405"
+        style="width:100%"><strong>
+        <p class="g_img_text">AI Generated Image</p>
+      </strong></img>
+      <img class="g_img"
+        src="https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/318344701_3304414539833777_5863670174347556461_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=3635dc&_nc_ohc=20I933cyoCMAX_f1Gvl&_nc_ht=scontent-atl3-1.xx&oh=00_AfCTeawspMFwCj6tt0aAMQ0HwFNru9ddCOmTRxZikFo0Qg&oe=65C18B01"
+        style="width:100%"><strong>
+        <p class="g_img_text">AI Generated Image</p>
+      </strong></img>
+      <img class="g_img"
+        src="https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/289722535_3166560803619152_1367038185430725263_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=Cl05kwn_lMYAX_3_Us5&_nc_ht=scontent-atl3-1.xx&oh=00_AfDpSXqVlQtk0kEjmcVYhc77P_desk9trQ1XpwCpYtpJrw&oe=65C0DD43">
+      <img class="g_img"
+        src="https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/289831841_3166560766952489_1035688981837536250_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=OhoMLP-4KPoAX9o1TUs&_nc_ht=scontent-atl3-1.xx&oh=00_AfDYTl64smTyyDLA5eYBJ3oWqQAHAT6VlUT1Yd_Fe3Caag&oe=65C18EEF">
+      <img class="g_img"
+        src="https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/289612885_3166560743619158_353442681195553693_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=3635dc&_nc_ohc=lk21qqZ9EwcAX-3SRDd&_nc_ht=scontent-atl3-2.xx&oh=00_AfBqP6cafqJ3t70GdTrmKfKqjB7aO0npOFk03DICwHi7CQ&oe=65C21D6A">
+      <img class="g_img"
+        src="https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/289579872_3166560713619161_1712638630595743607_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=3635dc&_nc_ohc=JDWHQadmJw8AX_69o-A&_nc_ht=scontent-atl3-2.xx&oh=00_AfAVAmOy5o1kj8UYCprrZQiFZWQGtSARy9eiErmKCqi7Dw&oe=65C0E81B">
+      <img class="g_img"
+        src="https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/289740600_3166560683619164_8585262097623403353_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=_67x2KRGrukAX-I7odg&_nc_oc=AQkstRoWSQFdoxXpuQAeZBVLG6Bl4-7G-7Y1mDq3JEVtS-B6zbIdAnOHlFu13_bsZLHJuvyTMTRAgO5vMyY95YrA&_nc_ht=scontent-atl3-1.xx&oh=00_AfCnpDI4xHKJyHfVQV1GGurYY0ZRKBNZUJTT-gY9AeRQAQ&oe=65C058B1"
+        style="width:100%">
+      <img class="g_img"
+        src="https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/289559770_3166560660285833_8869303647307621487_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=3635dc&_nc_ohc=iUHqm_SeGkgAX_qw8GP&_nc_ht=scontent-atl3-1.xx&oh=00_AfDylztpE1HnoS8ICQQ7hOmXEx_iOGbm6vBLvnSpEUMTRA&oe=65C0755D">
+      <img class="g_img"
+        src="https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/289599193_3166560633619169_5692331017031745175_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=4NtyYnXfxoUAX_BTf7z&_nc_ht=scontent-atl3-1.xx&oh=00_AfAwywxzGPNtH9cGLs2IFkfe210F7NDHGqn7KJraVL7tJw&oe=65C15777">
+      <img class="g_img"
+        src="https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/289614873_3166560596952506_8451865146997804263_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=3635dc&_nc_ohc=7kCnT95KjfAAX85GTVt&_nc_ht=scontent-atl3-2.xx&oh=00_AfAUbBaFmggHnKtmAgTQWe27SuXKF6A2m43iE5lpbLjwWg&oe=65C1E6A1">
+    </div>
+
+    <div class="column">
+      <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+      <img src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
+      <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+      <img src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
+      <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+      <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+    </div>
   </div>
-  
-  <div class="column">
-    <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
-  </div> 
-   
-  <div class="column">
-    <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
-  </div>
-  
-  <div class="column">
-    <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-    <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
-  </div>
-</div>
 
 </body>
+
 </html>

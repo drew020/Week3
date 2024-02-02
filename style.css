@@ -1,3 +1,4 @@
+/* #region Comment*/
 /* 
     justify-content
     flex-direction
@@ -6,26 +7,76 @@
     flex-wrap
     flex-flow
     align-items
-    align-content 
-*/
+    align-content
+    */
+/* #endregion Comment*/
 
+/* #region Global Style*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
     color: rgb(255, 255, 255);
 }
 
 body {
     background-repeat: no-repeat;
     background-size: auto;
-    background: rgb(54,54,54);
-    background: radial-gradient(circle, rgba(54,54,54,1) 0%, rgba(0,0,0,1) 100%);
+    background: rgb(54, 54, 54);
+    background: radial-gradient(circle, rgba(54, 54, 54, 1) 0%, rgba(0, 0, 0, 1) 100%);
     margin: auto;
 }
 
+section {
+    display: flexbox;
+    flex: auto;
+    text-align: center;
+    margin: auto;
+}
+
+span {
+    display: inline-flex;
+    margin: 0 auto;
+}
+
+table {
+    display: inline-flex;
+    margin: 0 auto;
+}
+
+img {
+    border-radius: 16%;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+form {
+    display: flexbox;
+    flex: 1;
+    width: 100%;
+    border: 1px solid #57636e;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+label {
+    display: block;
+    text-align: left;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+}
+
+main {
+    display: flexbox;
+    width: 336px;
+    text-align: center;
+    margin: 0 auto;
+}
+/* #endregion Global Style*/
+
+/* #region Navigation bar Style*/
 ul {
     display: flex;
     list-style-type: none;
@@ -59,71 +110,76 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) 
-{
+li a:hover:not(.active) {
     background-color: #5f6f8b;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
-.active 
-{
+.active {
     background-color: #4a5f7a;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-section 
-{
-    display: flexbox;
-    flex: auto;
-    text-align: center;
-    margin: auto;
+/* #endregion Navigation bar Style */
 
-}
+/* #region Index Style*/
+/* #endregion Index Style*/
 
-span,
-table 
-{
-    display: inline-flex;
-    margin: 0 auto;
-}
+/* #region News Style*/
+/* #endregion News Style*/
 
-img 
-{
-    border-radius: 16%;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
-
-form 
-{
-    display: flexbox;
-    flex: 1;
+/* #region Gallery Style*/
+.g_img {
     width: 100%;
-    border: 1px solid #57636e;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    height: max-content;
 }
 
-label 
-{
+.g_img_text {
     display: block;
-    text-align: left;
-}
-
-input 
-{
-    display: block;
-    margin: 0 auto;
-}
-
-main 
-{
-    display: flexbox;
-    width: 336px;
     text-align: center;
-    margin: 0 auto;
+    text-shadow: 1px 1px #000000;
+    ;
+    border: #4a5f7a;
+    position: relative;
+    transform: translate(0, -512%);
 }
 
-.cell
-{
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* #endregion Gallery Style*/
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+}
+
+.column img {
+    vertical-align: middle;
+}
+
+
+
+/* Galery Style--------------------------------------------------*/
+/* Resume Style--------------------------------------------------*/
+/* Resume Style--------------------------------------------------*/
+/* Login Style-------------------------------------------------------- */
+/* Login Style-------------------------------------------------------- */
+/* Signup Style-------------------------------------------------------- */
+/* Signup Style-------------------------------------------------------- */
+
+
+
+.cell {
     display: block;
     height: auto;
     width: 272px;
@@ -136,23 +192,20 @@ main
 
 }
  */
-.cimage
-{
+.cimage {
     display: flex;
     border: 2px solid #57636e;
     margin: 5px;
 }
 
-.ctext
-{
+.ctext {
     display: flex;
     /*border: 1px solid rgb(255, 255, 255);*/
     color: white;
     margin: 10px;
 }
 
-.fbutton
-{
+.fbutton {
     color: black;
     background-color: #ffffff;
 }
