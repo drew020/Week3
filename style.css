@@ -159,30 +159,20 @@ li a:hover:not(.active) {
 
 /* #region Gallery Style*/
 .g_img {
+
     display: inline-block;
     position: relative;
     z-index: 2;
 }
 
 .g_img_text {
-    display: flex;
-    flex: 1;
 
-    height: 136px;
-    width: 136px;
-
+    max-height: 40%;
     color: rgba(255, 255, 255, 1.0);
     text-shadow: 2px 2px #000000;
-
     margin:0 auto;
     border: #4a5f7a;
 }
-
-.g_img_text:hover {
- 
-    transition-duration: 1s;
-}
-
 .g_header {
     text-align: center;
     padding: 32px;
@@ -190,14 +180,12 @@ li a:hover:not(.active) {
 
 .g_section{
     display: grid;
-
-    padding: 6%;
     width:20%;
 }
 
 .g_section:hover{
     padding: 0%;
-    width:100%;
+    width:60%;
     transition-duration: 1s; 
 }
 
