@@ -192,11 +192,12 @@ li a:hover:not(.active) {
     display: grid;
 
     padding: 6%;
-    width:25%;
+    width:20%;
 }
 
 .g_section:hover{
     padding: 0%;
+    width:100%;
     transition-duration: 1s; 
 }
 
