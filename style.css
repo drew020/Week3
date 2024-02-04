@@ -23,13 +23,18 @@
 /*     Debug Boarder*/ /** border: 1px solid white;  /**/
 
 }
-
+html{
+    display: flex;
+    justify-content: center;
+    background-image:url(LtS7Q.png);
+    background-repeat: repeat;
+}
 body {
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size:auto;
-    background: rgb(54, 54, 54);
-    background: radial-gradient(circle, rgba(54, 54, 54, 1) 0%, rgba(0, 0, 0, 1) 100%);
-    
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 25%, rgba(50,50,50,1) 50%, rgba(0,0,0,0.7175245098039216) 75%);
+
 }
 
 section {
@@ -53,7 +58,7 @@ img {
 }
 
 form {
-    display: flexbox;
+    display: flex;
     flex: 1;
     width: 100%;
     border: 1px solid #57636e;
@@ -185,7 +190,7 @@ li a:hover:not(.active) {
 
 .g_section:hover{
     padding: 0%;
-    width:60%;
+    width:50%;
     transition-duration: 1s; 
 }
 
@@ -202,6 +207,7 @@ li a:hover:not(.active) {
     flex-wrap: wrap;
     padding: 0 4px;
 }
+
 
 
 
