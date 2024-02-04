@@ -28,6 +28,8 @@ html{
     background-repeat: repeat;
 }
 body {
+    min-width: 100%;
+    min-height: 100%;
     background-repeat: repeat;
     background: radial-gradient(circle, rgba(0,0,0,0.6951155462184874) 25%, rgba(50,50,50,0.6923144257703081) 50%, rgba(0,0,0,0.5382528011204482) 75%);
 }
@@ -67,7 +69,8 @@ input {
 
 main {
     display: flex;
-    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
     align-content: center;
     justify-content: center;
 
@@ -124,27 +127,37 @@ li a:hover:not(.active) {
 
 /* #region News Style*/
 .s_cell {
-    display: grid;
-    width: 100%;
-    width: 1024px;
+    display: block;
     margin: 24px;
+    width:min-content;
+    background-color: #000000;
     border: 1px solid #57636e;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .s_video{
-    display: block;
     border: 2px solid #57636e;
     margin: 5px;
 }
 
 .s_text {
     display: block;
-    /*border: 1px solid rgb(255, 255, 255);*/
     color: white;
-    margin: 10px;
+    border: 1px solid #57636e;
 }
 
-
+.s_showcase{
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
 /* #endregion News Style*/
 
 /* #region Gallery Style*/
