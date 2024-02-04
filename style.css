@@ -28,8 +28,6 @@ html{
     background-repeat: repeat;
 }
 body {
-    display:block;
-    min-height: 100%;
     background-repeat: repeat;
     background: radial-gradient(circle, rgba(0,0,0,0.6951155462184874) 25%, rgba(50,50,50,0.6923144257703081) 50%, rgba(0,0,0,0.5382528011204482) 75%);
 }
@@ -85,7 +83,7 @@ ul {
     margin: auto;
     padding: 0;
     overflow: hidden;
-    background-color: #00d3f813;
+    background-color: #013f5c79;
 }
 
 li {
@@ -125,36 +123,28 @@ li a:hover:not(.active) {
 /* #endregion Index Style*/
 
 /* #region News Style*/
-.cell {
-    display: block;
-    height: auto;
-    width: 272px;
+.s_cell {
+    display: grid;
+    width: 100%;
+    width: 1024px;
+    margin: 24px;
     border: 1px solid #57636e;
-    margin: 10px;
 }
 
-/* .ccontent
-{
-
-}
- */
-.cimage {
-    display: flex;
+.s_video{
+    display: block;
     border: 2px solid #57636e;
     margin: 5px;
 }
 
-.ctext {
-    display: flex;
+.s_text {
+    display: block;
     /*border: 1px solid rgb(255, 255, 255);*/
     color: white;
     margin: 10px;
 }
 
-.fbutton {
-    color: black;
-    background-color: #ffffff;
-}
+
 /* #endregion News Style*/
 
 /* #region Gallery Style*/
@@ -174,9 +164,20 @@ li a:hover:not(.active) {
     border: #4a5f7a;
 }
 .g_header {
+    display: grid;
     text-align: center;
     padding: 32px;
+    border: px solid white;
+    background-color: #4a5f7a;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
+
+/* Get child of Header. Edit h1 and h2 that are children of header. */
+header> h1 ,h3{
+    color:  rgb(0, 31, 78);
+    /* border-radius: 32px; */
+/*     background: rgb(19, 19, 19);
+ */}
 
 /* Width-% before Width-int gives reactive screen size display with out media inquiry !?!?!?! ODD...Property order matters.*/
 .g_section{
@@ -240,6 +241,11 @@ Create four equal columns that sits next to each other
     display: flex;
     align-content: center;
     justify-content: center;
+}
+
+.fbutton {
+    color: black;
+    background-color: #ffffff;
 }
 /* #endregion Login Style*/
 
