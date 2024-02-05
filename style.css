@@ -22,9 +22,10 @@
 /*     Debug Boarder*/ /** border: 1px solid white;  /**/
 
 }
+
 html{
     justify-content: center;
-    background-image:url(LtS7Q.png);
+    background-image:url(/Week3/images/LtS7Q.png);
     background-repeat: repeat;
 }
 body {
@@ -51,7 +52,6 @@ img {
 
 form {
     display: flex; 
-
     width: 100%;
     border: 1px solid #57636e;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
@@ -73,7 +73,12 @@ main {
     min-height: 100%;
     align-content: center;
     justify-content: center;
+}
 
+nav{
+    display: block;
+    height:fit-content;
+    width: 100%;
 }
 /* #endregion Global Style*/
 
@@ -84,13 +89,11 @@ ul {
     border-radius: 8px;
     border: 2px solid #57636e;
     margin: auto;
-    padding: 0;
     overflow: hidden;
     background-color: #013f5c79;
 }
 
 li {
-    display: block;
     flex: 1;
     float: left;
     margin: auto;
@@ -105,8 +108,8 @@ li:last-child {
 li a {
     display: block;
     color: rgb(223, 229, 233);
+    padding: 10px;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
@@ -116,9 +119,21 @@ li a:hover:not(.active) {
 }
 
 .active {
+    padding:15px;
     background-color: #4a5f7a;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
+
+#n_navdropdownbutton{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.0);
+}
+#n_navdropdowndiv{
+    color: #000000;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
 
 /* #endregion Navigation bar Style */
 

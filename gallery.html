@@ -3,21 +3,66 @@
 
 <head>
   <title>Art Gallery</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="Screenshot (193).png">
+  <link rel="icon" type="image/x-icon" href="/Week3/images/Screenshot (193).png">
 </head>
 
 <body>
   <!--Navigation-->
   <nav>
     <ul>
-      <li><a class="active" href="index.html"><strong>Home</strong></a></li>
-      <li><a href="showcase.html"><strong>Video Showcase</strong></a></li>
-      <li><a href="gallery.html"><strong>Art Gallery</strong></a></li>
-      <li><a href="about.html"><strong>About</strong></a></li>
-      <li><a href="login.html"><strong>Login & Sighup</strong></a></li>
+      <li class="active"><a href="index.html"><strong>Home</strong></a></li>
+      <li class="dropdown">
+        <button id="n_navdropdownbutton" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <strong>Video Showcase</strong>
+        </button>
+        <div id="n_navdropdowndiv" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/Week3/gallery.html"><span>New</span>Featured</a>
+
+          <a class="dropdown-item" href="#"><span>New</span>Level Design</a>
+          <a class="dropdown-item" href="#"><span>Game</span>3d Modeling</a>
+        </div>
+        <!-- <a href="showcase.html"><strong>Video Showcase</strong></a> --></li>
+      <li class="dropdown">
+        <button id="n_navdropdownbutton" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <strong>Art Gallery</strong>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/Week3/gallery.html"><span>New</span>Featured</a>
+
+          <a class="dropdown-item" href="#"><span>New</span>Level Design</a>
+          <a class="dropdown-item" href="#"><span>Game</span>3d Modeling</a>
+        </div>
+        <!-- <a href="gallery.html"><strong>Art Gallery</strong></a> -->
+      </li>
+      <li class="dropdown">
+        <button id="n_navdropdownbutton" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <strong>About</strong>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="1"><span>Founder & CEO</span> Andrew L. McClain</a>
+          <a class="dropdown-item" href="2">(CS)Crystal Synthesis Studio</a>
+          <a class="dropdown-item" href="#"><span>Game</span>Errant Knight</a>
+        </div>
+        <!-- <a href="login.html"><strong>Login & Sighup</strong></a> -->
+      </li>
+        <li class="dropdown">
+          <button id="n_navdropdownbutton" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <strong>Authorization</strong>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="1"><span>Founder & CEO</span> Andrew L. McClain</a>
+            <a class="dropdown-item" href="2">(CS)Crystal Synthesis Studio</a>
+            <a class="dropdown-item" href="#"><span>Game</span>Errant Knight</a>
+          </div>
+          <!-- <a href="login.html"><strong>Login & Sighup</strong></a> -->
+        </li>
     </ul>
   </nav>
+
+
   <!-- Header -->
   <header class="g_header">
     <h1>Art Gallery</h1>
