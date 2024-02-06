@@ -1,3 +1,4 @@
+
 /* #region Comment*/
 /* 
     justify-content
@@ -30,6 +31,7 @@
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--text_color);
+    fon
     /*     border: 1px solid #003049;*/
 
     /*     Debug Boarder*/
@@ -39,7 +41,7 @@
 
 html {
     justify-content: center;
-    background-image: url(/Week3/Images/LtS7Q.png);
+    background-image: url(LtS7Q.png);
     background-repeat: repeat;
 }
 
