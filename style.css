@@ -9,31 +9,47 @@
     align-items
     align-content
     */
+
 /* #endregion Comment*/
 
+
 /* #region Global Style*/
+:root {
+    /* Variables */
+    --main_color:rgb(0, 75, 116);
+    --accent_color:rgb(0, 217, 255);
+    --touch_color:rgb(0, 23, 36);
+    --text_color:rgba(255,255,255,1);
+    --text_color_contrast:rgba(0,0,0,1);
+
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(255, 255, 255);
+    color: var(--text_color);
+    /*     border: 1px solid #003049;*/
 
-/*     Debug Boarder*/ /** border: 1px solid white;  /**/
+    /*     Debug Boarder*/
+    /** border: 1px solid white;  /**/
 
 }
 
-html{
+html {
     justify-content: center;
-    background-image:url(/Week3/images/LtS7Q.png);
+    background-image: url(/Week3/Images/LtS7Q.png);
     background-repeat: repeat;
 }
+
 body {
     min-width: 100%;
     min-height: 100%;
     background-repeat: repeat;
-    background: radial-gradient(circle, rgba(0,0,0,0.6951155462184874) 25%, rgba(50,50,50,0.6923144257703081) 50%, rgba(0,0,0,0.5382528011204482) 75%);
-}
+    background: rgb(0,0,0);
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.64) 0%, rgba(0,119,182,0.64) 25%, rgba(144,224,239,0.64) 38%, rgba(255,255,255,0.64) 50%, rgba(144,224,239,0.64) 62%, rgba(0,119,182,0.64) 75%, rgba(0,0,0,0.64) 100%);}
 
 section {
     text-align: center;
@@ -51,10 +67,10 @@ img {
 }
 
 form {
-    display: flex; 
+    display: flex;
     width: 100%;
-    border: 1px solid #57636e;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    border: 2px solid var(--main_color);
+    box-shadow: rgba(255, 255, 255, 0.17) 0px -23px 25px 0px inset, rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset, rgba(255, 255, 255, 0.06) 0px 2px 1px, rgba(255, 255, 255, 0.09) 0px 4px 2px, rgba(255, 255, 255, 0.09) 0px 8px 4px, rgba(255, 255, 255, 0.09) 0px 16px 8px, rgba(255, 255, 255, 0.09) 0px 32px 16px;
 }
 
 label {
@@ -69,69 +85,105 @@ input {
 
 main {
     display: flex;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
     align-content: center;
     justify-content: center;
 }
 
-nav{
+nav {
     display: block;
-    height:fit-content;
+    height: fit-content;
     width: 100%;
 }
+
 /* #endregion Global Style*/
 
 /* #region Navigation bar Style*/
 ul {
     display: flex;
-    list-style-type: none;
-    border-radius: 8px;
-    border: 2px solid #57636e;
-    margin: auto;
-    overflow: hidden;
-    background-color: #013f5c79;
+    width: 100%;
+    border: 2px solid var(--main_color);
+    overflow: visible;
+    background-color: var(--accent_color);
+    margin: 0;
+    padding: 0;
 }
 
 li {
+    display: flex;
     flex: 1;
-    float: left;
-    margin: auto;
-    border-right: 1px solid #bbbbbba6;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-right: 2px solid var(--text_color);
+    box-shadow: rgba(255, 255, 255, 0.17) 0px -23px 25px 0px inset, rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset, rgba(255, 255, 255, 0.06) 0px 2px 1px, rgba(255, 255, 255, 0.09) 0px 4px 2px, rgba(255, 255, 255, 0.09) 0px 8px 4px, rgba(255, 255, 255, 0.09) 0px 16px 8px, rgba(255, 255, 255, 0.09) 0px 32px 16px;
 }
 
-li:last-child {
+/* li:last-child {
     border-right: none;
-}
+} */
 
 li a {
     display: block;
-    color: rgb(223, 229, 233);
-    padding: 10px;
+    color: var(--text_color_contrast);
     text-align: center;
     text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    background-color: #5f6f8b;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-color: var(--main_color);
+    box-shadow: rgba(255, 255, 255, 0.17) 0px -23px 25px 0px inset, rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset, rgba(255, 255, 255, 0.06) 0px 2px 1px, rgba(255, 255, 255, 0.09) 0px 4px 2px, rgba(255, 255, 255, 0.09) 0px 8px 4px, rgba(255, 255, 255, 0.09) 0px 16px 8px, rgba(255, 255, 255, 0.09) 0px 32px 16px;
 }
 
 .active {
-    padding:15px;
-    background-color: #4a5f7a;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    background-color: var(--main_color);
+    box-shadow: rgba(255, 255, 255, 0.17) 0px -23px 25px 0px inset, rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset, rgba(255, 255, 255, 0.06) 0px 2px 1px, rgba(255, 255, 255, 0.09) 0px 4px 2px, rgba(255, 255, 255, 0.09) 0px 8px 4px, rgba(255, 255, 255, 0.09) 0px 16px 8px, rgba(255, 255, 255, 0.09) 0px 32px 16px;
 }
 
-#n_navdropdownbutton{
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid rgba(255, 255, 255, 0.0);
+.dropdown-menu {
+    background-color: #669BBC;
+    width: fit-content;
 }
-#n_navdropdowndiv{
-    color: #000000;
-    background-color: rgba(0, 0, 0, 0.0);
+
+.dropdown-item {
+    color:var(--text_color);
+    text-shadow: 2px 2px var(--main_color);
+}
+
+.n_navdropdown_item {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    border-right: double;
+    width: 100%;
+    
+
+
+}
+
+.n_menuitemspan {
+    color: var(--main_color);
+    text-shadow: 2px 2px var(--accent_color);
+
+}
+
+#n_navdropdown_button {
+    width: 100%;
+    height: 100%;
+    color: var(--accent_color);
+    background-color:var(--main_color);
+    border: 2px solid var(--touch_color);
+    box-shadow: rgba(255, 255, 255, 0.17) 0px -23px 25px 0px inset, rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset, rgba(255, 255, 255, 0.06) 0px 2px 1px, rgba(255, 255, 255, 0.09) 0px 4px 2px, rgba(255, 255, 255, 0.09) 0px 8px 4px, rgba(255, 255, 255, 0.09) 0px 16px 8px, rgba(255, 255, 255, 0.09) 0px 32px 16px;
+
+    
+}
+
+#n_navdropdown_container {
+    padding: 0;
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+    background-color: var(--main_color);
 }
 
 
@@ -144,27 +196,26 @@ li a:hover:not(.active) {
 .s_cell {
     display: block;
     margin: 24px;
-    width:min-content;
-    background-color: #000000;
-    border: 1px solid #57636e;
+    width: min-content;
+    background-color: var(--accent_color);
+    border: 2px solid var(--main_color);
     justify-content: center;
     align-content: center;
     align-items: center;
     justify-items: center;
 }
 
-.s_video{
-    border: 2px solid #57636e;
+.s_video {
+    border: 2px solid var(--main_color);
     margin: 5px;
 }
 
 .s_text {
     display: block;
     color: white;
-    border: 1px solid #57636e;
 }
 
-.s_showcase{
+.s_showcase {
     display: grid;
     flex-wrap: wrap;
     justify-content: center;
@@ -173,6 +224,7 @@ li a:hover:not(.active) {
     justify-items: center;
     text-align: center;
 }
+
 /* #endregion News Style*/
 
 /* #region Gallery Style*/
@@ -187,28 +239,29 @@ li a:hover:not(.active) {
 
     max-height: 40%;
     color: rgba(255, 255, 255, 1.0);
-    text-shadow: 2px 2px #000000;
-    margin:0 auto;
+    text-shadow: 2px 2px var(--main_color);
+    margin: 0 auto;
     border: #4a5f7a;
 }
+
 .g_header {
     display: grid;
     text-align: center;
     padding: 32px;
-    border: px solid white;
-    background-color: #4a5f7a;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border: 2px solid var(--main_color);
+    background-color: var(--touch_color);
+    box-shadow: rgba(255, 255, 255, 0.17) 0px -23px 25px 0px inset, rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset, rgba(255, 255, 255, 0.06) 0px 2px 1px, rgba(255, 255, 255, 0.09) 0px 4px 2px, rgba(255, 255, 255, 0.09) 0px 8px 4px, rgba(255, 255, 255, 0.09) 0px 16px 8px, rgba(255, 255, 255, 0.09) 0px 32px 16px;
 }
 
 /* Get child of Header. Edit h1 and h2 that are children of header. */
-header> h1 ,h3{
-    color:  rgb(0, 31, 78);
-    /* border-radius: 32px; */
-/*     background: rgb(19, 19, 19);
- */}
+header>h1,
+h3 {
+    color: var(--text_color);
+    text-shadow: 2px 2px var(--accent_color);
+}
 
 /* Width-% before Width-int gives reactive screen size display with out media inquiry !?!?!?! ODD...Property order matters.*/
-.g_section{
+.g_section {
     display: grid;
     position: relative;
     width: 30%;
@@ -217,20 +270,20 @@ header> h1 ,h3{
 }
 
 /* Makes Section Expand  */
-.g_section:hover{
+.g_section:hover {
     width: 40%;
     width: 512px;
-    transition-duration: 1s; 
+    transition-duration: 1s;
 }
 
 /* Makes Text vanish on image hover */
-.g_section:hover .g_img_text{
+.g_section:hover .g_img_text {
     height: 0px;
     width: 0px;
-    color: rgba(0, 0, 0, 0);
-    text-shadow: 2px 2px #00000000;
-
+    color: rgba(0,0,0,0.0);
+    text-shadow: 2px 2px rgba(0,0,0,0.0);
 }
+
 /*
 .g_row {
     display: flex;
@@ -252,7 +305,7 @@ Create four equal columns that sits next to each other
     vertical-align: middle;
 }
 */
-.g_gallery{
+.g_gallery {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -265,16 +318,17 @@ Create four equal columns that sits next to each other
 /* #endregion Resume Style*/
 
 /* #region Login Style*/
-.l_form{
+.l_form {
     display: flex;
     align-content: center;
     justify-content: center;
 }
 
 .fbutton {
-    color: black;
-    background-color: #ffffff;
+    color: var(--text_color_contrast);
+    background-color: var(--main_color);
 }
+
 /* #endregion Login Style*/
 
 /* #region Signup Style*/
